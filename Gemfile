@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use postgresql as the database for Active Record
-gem 'pg'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -41,9 +41,8 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'haml', '~> 4.0.6'
+  gem 'simple_form', '~> 3.1.0'
+  gem 'devise', '~> 3.5.1'
 end
 
-gem "paperclip", "~> 4.2"
-gem 'dotenv-rails', :groups => [:development, :test]
-gem 'aws-sdk', '< 2.0'
-#gem 'sql2'
